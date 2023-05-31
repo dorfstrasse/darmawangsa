@@ -195,7 +195,7 @@ a:hover {
 # Rotating Banner
 ----------------------------------------------------- */
 
-@media (min-width: 860px) {
+@media (min-width: 1480px) {
     #rotban .swiper {
         width: 100%;
         height: 831px;
@@ -270,8 +270,7 @@ a:hover {
     justify-content: center;
     position: relative;
     z-index: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
 }
 
 #residence h1,
@@ -283,44 +282,40 @@ a:hover {
 }
 
 @media (min-width: 860px) {
-    #residence .res2 {
-    border: 1px solid #eee8aa;
+    #residence .res2 img {
+        flex: 0 0 auto;
     }
 }
   
   
 @media (max-width: 859px) and (min-width: 426px) {
-    #residence .res2 {
-        border: 1px solid #eee8aa;
-    }
     #residence .res2 img {
         flex: 0 0 auto;
+        width: 47%;
     }
 }
   
 @media (max-width: 425px) {
-    #residence .res2 {
-        border: 1px solid #eee8aa;
-    }
     #residence .res2 img {
         flex: 0 0 auto;
+        width: 47%;
     }
 }
 
 #residence .res2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
     /* background: url("../img/Road.png") center; */
-    height: 45vh;
+    padding: 30px;
     width: 100%;
     z-index: 3;
 }
 
 #residence .res2 img {
-    height: 30vh;
+    max-height: 30vh;
 }
 
 /* -----------------------------------------------------
@@ -372,10 +367,18 @@ a:hover {
 
 #bank-partners .banks {
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
 }
 
-@media (min-width: 860px) {
+#bank-partners .banks-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 900px) {
     #bank-partners .banks-col {
         width: 30%;
         margin-top: 50px;
@@ -383,23 +386,25 @@ a:hover {
 }
   
   
-@media (max-width: 859px) and (min-width: 426px) {
+@media (max-width: 899px) and (min-width: 426px) {
     #bank-partners .banks-col {
-        width: 33.333333334%;
+        width: 30%;
         margin-top: 50px;
     }
 }
   
 @media (max-width: 425px) {
     #bank-partners .banks-col {
+        width: 40%;
         margin-top: 50px;
     }
 }
 
 
-.projects-section {
-    padding: 10rem 0;
+#projects {
+    margin-top: 50px;
 }
+
 .projects-section .featured-text {
 padding: 2rem;
 }
