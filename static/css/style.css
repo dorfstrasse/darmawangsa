@@ -5,9 +5,9 @@
     font-family: "Marcellus", sans-serif;
 }
 
-body {
+/* body {
     overflow: overlay;
-}
+} */
 
 a {
     /* color: rgb(50, 50, 50); */
@@ -201,14 +201,52 @@ a:hover {
         height: 831px;
     }
 }
+
+@media (min-width: 860px) {
+    #rotban .img-wrapper .txt-rb{
+        margin-left: 90px;
+        font-size: 20px;
+        gap: 10px;
+    }
+    .txt-rb h1 {
+        font-size: 50px;
+    }
+    .txt-rb h2 {
+        font-size: 33px;
+    }
+}
   
   
 @media (max-width: 859px) and (min-width: 426px) {
-    
+    #rotban .img-wrapper .txt-rb{
+        margin-left: 60px;
+        font-size: 20px;
+        gap: 7px;
+    }
+    .txt-rb h1 {
+        font-size: 43px;
+    }
+    .txt-rb h2 {
+        font-size: 28px;
+    }
+    #rotban .swiper-button-next,
+    #rotban .swiper-button-prev {
+        height: 50px;
+    }
 }
   
 @media (max-width: 425px) {
-    
+    #rotban .img-wrapper .txt-rb{
+        margin-left: 50px;
+        font-size: 20px;
+        gap: 5px;
+    }
+    .txt-rb h1 {
+        font-size: 24px;
+    }
+    .txt-rb h2 {
+        font-size: 17px;
+    }
 }
 
 #rotban {
@@ -235,9 +273,20 @@ a:hover {
 }
 
 #rotban .img-wrapper {
-    /* margin: 5cm; */
-    /* width: 100%; */
     height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#rotban .text-wrapper {
+    position: absolute;
+}
+
+#rotban .txt-rb {
+    display: flex;
+    background: rgba(25, 25, 25, 0.5);
+    color: white;
+    align-items: end;
 }
 
 #rotban .img-wrapper img {
@@ -252,7 +301,7 @@ a:hover {
 #rotban .swiper-button-next,
 #rotban .swiper-button-prev {
     color: #eee8aa;
-    /* background: rgba(25, 25, 25, 0.7); */
+    background: rgba(30, 30, 30, 0.7);
 }
 
 #rotban .swiper-pagination-bullet-active {
@@ -271,6 +320,7 @@ a:hover {
     position: relative;
     z-index: 0;
     padding-top: 30px;
+    /* margin-top: 50px; */
 }
 
 #residence h1,
@@ -278,17 +328,17 @@ a:hover {
 #residence h3,
 #residence h4,
 #residence p {
-    color: #eee8aa;
+    color: goldenrod;
 }
 
-@media (min-width: 860px) {
+@media (min-width: 992px) {
     #residence .res2 img {
         flex: 0 0 auto;
     }
 }
   
   
-@media (max-width: 859px) and (min-width: 426px) {
+@media (max-width: 991px) and (min-width: 426px) {
     #residence .res2 img {
         flex: 0 0 auto;
         width: 47%;
@@ -308,8 +358,6 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    /* background: url("../img/Road.png") center; */
-    padding: 30px;
     width: 100%;
     z-index: 3;
 }
@@ -318,45 +366,112 @@ a:hover {
     max-height: 30vh;
 }
 
+
 /* -----------------------------------------------------
-# Listing
+# Projects
 ----------------------------------------------------- */
-
-#listing {
-    display: flex;
-    justify-content: center;
+#projects1,
+#projects2 {
+    margin-top: 50px;
+    padding: 70px 0px 70px 0px;
 }
 
-#listing .property {
-    display: flex;
-    justify-content: center;
-}
-
-.listing-wrapper div {
-    margin-bottom: 30px;
-}
-
-#listing img {
-    max-height: 500px;
-}
-
-#projects h4 {
+#projects1 h4,
+#projects2 h4 {
     font-weight: 500;
 }
 
+#projects1 {
+    background: linear-gradient(to bottom, rgba(35, 35, 35, 1), rgba(35, 35, 35, 0.8), rgba(35, 35, 35, 1)), url("../img/padma-bg.png") center;
+    color: goldenrod;
+}
+
+#projects2 {
+    background: linear-gradient(to bottom, rgba(35, 35, 35, 1), rgba(35, 35, 35, 0.8), rgba(35, 35, 35, 1)), url("../img/anvaya-bg.png") center;
+    color: goldenrod;
+}
+
+.project-text h4 {
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.project-text .table-fasilitas {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(30, 30, 30);
+    background: rgba(100, 100, 100, 0.2);
+    padding: 0px 10px 0px 10px;
+}
+.project-text p {
+    color: white;
+}
+
+#projects1 .park {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media (min-width: 992px) {
+    #projects1 .park1 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    #projects1 .park2 {
+        flex: 0 0 auto;
+        width: 48%;
+    }
+    #projects1 .park3 {
+        flex: 0 0 auto;
+        width: 48%;
+    }
+}
+  
+  
+@media (max-width: 991px) and (min-width: 426px) {
+    #projects1 .park1 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    #projects1 .park2 {
+        flex: 0 0 auto;
+        width: 47%;
+    }
+    #projects1 .park3 {
+        flex: 0 0 auto;
+        width: 47%;
+    }
+}
+  
+@media (max-width: 425px) {
+    #projects1 .park1 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    #projects1 .park2 {
+        flex: 0 0 auto;
+        width: 45%;
+    }
+    #projects1 .park3 {
+        flex: 0 0 auto;
+        width: 45%;
+    }
+}
 
 /* -----------------------------------------------------
-# Listing
+# Bank Partners
 ----------------------------------------------------- */
 
 #bank-partners {
-    background: black;
+    background: rgb(30, 30, 30);
     color: #eee8aa;
     justify-content: center;
     position: relative;
     z-index: 0;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-top: 50px;
 }
 
 #bank-partners .banks-logo {
@@ -400,35 +515,21 @@ a:hover {
     }
 }
 
-
-#projects {
+/* -----------------------------------------------------
+# Footer
+----------------------------------------------------- */
+#footer {
     margin-top: 50px;
+    background: white;
 }
 
-.projects-section .featured-text {
-padding: 2rem;
-}
-@media (min-width: 992px) {
-    .projects-section .featured-text {
-        padding: 0 0 0 2rem;
-        border-left: 0.5rem solid #64a19d;
-    }
-}
-.projects-section .project-text {
-    padding: 3rem;
-    font-size: 90%;
-}
-@media (min-width: 992px) {
-    .projects-section .project-text {
-        padding: 5rem;
-    }
-    .projects-section .project-text hr {
-        border-color: #64a19d;
-        border-width: 0.25rem;
-        width: 30%;
-    }
+#footer p {
+    color: black;
 }
 
+/* -----------------------------------------------------
+# Contact
+----------------------------------------------------- */
 
 .wa-group {
     display: flex;
