@@ -572,7 +572,6 @@ a:hover {
     position: fixed;
     width: 40px;
     height: 40px;
-    z-index: 999999;
 }
 
 .list-desc {
