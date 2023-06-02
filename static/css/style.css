@@ -102,7 +102,7 @@ a:hover {
   
 @media (max-width: 425px) {
     h1 {
-        font-size: 27px;
+        font-size: 24px;
         font-weight: 500;
     }
     h2 {
@@ -302,6 +302,23 @@ a:hover {
 /* -----------------------------------------------------
 # Promo
 ----------------------------------------------------- */
+@media (min-width: 860px) {
+    #promo {
+        padding-top: 35px;
+    }
+}
+
+@media (max-width: 859px) and (min-width: 426px) {
+    #promo {
+        padding-top: 27px;
+    }
+}
+
+@media (max-width: 425px) {
+    #promo {
+        padding-top: 20px;
+    }
+}
 
 #promo {
     display: flex;
@@ -309,8 +326,6 @@ a:hover {
     justify-content: center;
     position: relative;
     z-index: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 #promo h1,
@@ -488,6 +503,24 @@ a:hover {
 # 2 Residence
 ----------------------------------------------------- */
 
+@media (min-width: 860px) {
+    #residence {
+        padding-top: 35px;
+    }
+}
+
+@media (max-width: 859px) and (min-width: 426px) {
+    #residence {
+        padding-top: 27px;
+    }
+}
+
+@media (max-width: 425px) {
+    #residence {
+        padding-top: 20px;
+    }
+}
+
 #residence {
     display: flex;
     background: rgb(30, 30, 30);
@@ -545,6 +578,52 @@ a:hover {
 /* -----------------------------------------------------
 # Projects
 ----------------------------------------------------- */
+
+@media (min-width: 860px) {
+    #projects1 {
+        padding-top: 35px;
+    }
+    #projects2 {
+        padding-top: 35px;
+    }
+    #projects1 h1 {
+        font-size: 50px;
+    }
+    #projects2 h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 859px) and (min-width: 426px) {
+    #projects1 {
+        padding-top: 27px;
+    }
+    #projects2 {
+        padding-top: 27px;
+    }
+    #projects1 h1 {
+        font-size: 42px;
+    }
+    #projects2 h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 425px) {
+    #projects1 {
+        padding-top: 20px;
+    }
+    #projects2 {
+        padding-top: 20px;
+    }
+    #projects1 h1 {
+        font-size: 26px;
+    }
+    #projects2 h1 {
+        font-size: 26px;
+    }
+}
+
 #projects1,
 #projects2 {
     padding: 20px 0px 20px 0px;
@@ -636,6 +715,24 @@ a:hover {
 /* -----------------------------------------------------
 # Bank Partners
 ----------------------------------------------------- */
+
+@media (min-width: 860px) {
+    #bank-partners {
+        padding-top: 35px;
+    }
+}
+
+@media (max-width: 859px) and (min-width: 426px) {
+    #bank-partners {
+        padding-top: 27px;
+    }
+}
+
+@media (max-width: 425px) {
+    #bank-partners {
+        padding-top: 20px;
+    }
+}
 
 #bank-partners {
     background: rgb(30, 30, 30);
