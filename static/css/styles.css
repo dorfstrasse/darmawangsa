@@ -129,88 +129,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
 }
 
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-
-@media (min-width: 860px) {
-  h1 {
-      font-size: 48px;
-      font-weight: 500;
-  }
-  h2 {
-      font-size: 40px;
-      font-weight: 400;
-  }
-  h3 {
-      font-size: 30px;
-      font-weight: 400;
-  }
-  h4 {
-      font-size: 22px;
-      font-weight: 400;
-  }
-  p {
-      font-size: 18px;
-  }
-
-  .icon {
-      width: 53px;
-      height: 53px;
-  }
-}
-
-
-@media (max-width: 859px) and (min-width: 426px) {
-  h1 {
-      font-size: 40px;
-      font-weight: 500;
-  }
-  h2 {
-      font-size: 40px;
-      font-weight: 500;
-  }
-  h3 {
-      font-size: 25px;
-  }
-  h4 {
-      font-size: 20px;
-  }
-  p {
-      font-size: 15px;
-  }
-
-  .icon {
-      width: 53px;
-      height: 53px;
-  }
-}
-
-@media (max-width: 425px) {
-  h1 {
-      font-size: 23px;
-      font-weight: 500;
-  }
-  h2 {
-      font-size: 23px;
-      font-weight: 500;
-  }
-  h3 {
-      font-size: 17px;
-  }
-  h4 {
-      font-size: 15px;
-  }
-  p {
-      font-size: 12px;
-  }
-
-  .icon {
-      width: 45px;
-      height: 45px;
-  }
-}
-
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
@@ -11670,7 +11588,7 @@ html {
   /* padding: 10rem 0; */
 }
 .projects-section .featured-text {
-  padding: 2rem;
+  padding: 1rem;
 }
 @media (min-width: 992px) {
   .projects-section .featured-text {
