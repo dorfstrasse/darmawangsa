@@ -10,7 +10,6 @@
 } */
 
 a {
-    /* color: rgb(50, 50, 50); */
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
@@ -142,7 +141,6 @@ a:hover {
 ----------------------------------------------------- */
 #header {
     display: flex;
-    /* background: rgb(25, 25, 25); */
     height: max-content;
     width: 100%;
     transition: all 0.5s;
@@ -820,7 +818,6 @@ a:hover {
 }
 #footer a:hover {
     color: red;
-    /* transform: translateX(7px); */
     transition: 0.5s;
 }
 
@@ -847,18 +844,12 @@ a:hover {
 #footer .f-title{
     display: flex;
     color: black;
-    border-left: 4px solid red;
     padding-left: 1.5rem;
     justify-content: center;
     font-size: 1.875rem;
     font-weight: 700;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-#footer .f-title h3 {
-    /* border-left: 4px solid red; */
-    /* padding-left: 10px; */
 }
 
 #footer ul{ 
